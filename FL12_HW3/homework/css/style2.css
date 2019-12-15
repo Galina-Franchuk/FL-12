@@ -1,0 +1,145 @@
+body {
+  background: #21232e;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif; }
+  body .header {
+    background: url(../img/m-h-night.jpg) 100% no-repeat;
+    height: 500px;
+    background-size: cover;
+    border-radius: 0 0 35em/15em 0; }
+    body .header .header-wrap {
+      width: 80%;
+      margin: auto; }
+      body .header .header-wrap .landing-logo {
+        display: flex; }
+        body .header .header-wrap .landing-logo img {
+          margin: 10px;
+          padding: 5px;
+          width: 30px; }
+        body .header .header-wrap .landing-logo span {
+          display: block;
+          font-size: 0.5em;
+          text-align: center; }
+      body .header .header-wrap .header_heading {
+        width: 400px;
+        font-size: 45px;
+        font-weight: 800;
+        line-height: 0.9; }
+      body .header .header-wrap .header_heading::before {
+        content: "awesome";
+        position: absolute;
+        margin: 50px 0 0 0px;
+        background: #ff4e33;
+        line-height: 20px;
+        padding: 0 0 10px 0; }
+      body .header .header-wrap .header_text {
+        white-space: pre-line;
+        font-size: 0.8em;
+        margin-top: -3em;
+        line-height: 1.5;
+        color: #fff; }
+      body .header .header-wrap div .header_button {
+        background: #e3ac00;
+        color: #fff;
+        box-shadow: none;
+        border: none;
+        width: 100px;
+        height: 30px;
+        margin-top: 2em;
+        margin-right: 8em; }
+        body .header .header-wrap div .header_button:hover {
+          color: #ca9900;
+          background: #ffc717;
+          box-shadow: 1px 1px 5px #e3ac00; }
+      body .header .header-wrap div .login {
+        color: #fff; }
+        body .header .header-wrap div .login:hover {
+          color: #d9d9d9; }
+  body .section {
+    margin: auto;
+    max-width: 700px; }
+    body .section .section_text, body .section .section_banner .section_banner_text_wrap .section_banner_heading {
+      text-align: center;
+      font-weight: 900;
+      font-size: 20px; }
+    body .section .section_text::before, body .section .section_banner .section_banner_text_wrap .section_banner_heading::before {
+      content: "adventure";
+      font-size: 20px;
+      position: absolute;
+      margin-left: 103px;
+      padding: 0 1px;
+      background: #ff4e33; }
+    body .section .section_card {
+      padding: 10px;
+      background: #3b3f50;
+      margin: 10px 15px;
+      padding: 10px;
+      display: flex; }
+      body .section .section_card .section_card_img {
+        border-radius: 10px; }
+      body .section .section_card .section_card_right_container {
+        color: #fff;
+        text-align: center; }
+        body .section .section_card .section_card_right_container .section_card_text, body .section .section_card .section_card_right_container .section_link {
+          font-size: 11px;
+          color: #c0c3ce;
+          margin: 5% 15%;
+          text-align: justify; }
+        body .section .section_card .section_card_right_container .section_link:hover {
+          color: #959aad; }
+    body .section .section_banner {
+      position: relative;
+      top: 50px;
+      display: flex;
+      align-items: center;
+      min-height: 100px;
+      border-radius: 5px;
+      background-image: linear-gradient(to right, #e3ac00, #942f50); }
+      body .section .section_banner .section_banner_text_wrap {
+        margin: 0px 10%; }
+        body .section .section_banner .section_banner_text_wrap .section_banner_heading {
+          color: #fff;
+          margin: 0; }
+        body .section .section_banner .section_banner_text_wrap .section_banner_heading::before {
+          content: "start";
+          position: absolute;
+          margin-left: 80px;
+          background: #ff4e33; }
+        body .section .section_banner .section_banner_text_wrap .section_banner_text {
+          color: #c0c3ce;
+          font-size: 12px; }
+      body .section .section_banner .section_banner_button {
+        background: #e3ac00;
+        color: #fff;
+        box-shadow: none;
+        border: none;
+        width: 100px;
+        height: 30px;
+        margin-left: 80px; }
+        body .section .section_banner .section_banner_button:hover {
+          color: #ca9900;
+          background: #ffc717;
+          box-shadow: 1px 1px 5px #e3ac00; }
+  body .footer-wrap {
+    background: #3b3f50;
+    color: #c0c3ce;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 18% 2% 18%; }
+    body .footer-wrap .landing-logo {
+      display: flex; }
+      body .footer-wrap .landing-logo img {
+        margin: 10px;
+        padding: 5px;
+        width: 30px; }
+      body .footer-wrap .landing-logo span {
+        display: block;
+        font-size: 0.5em;
+        text-align: center; }
+    body .footer-wrap .footer_text {
+      width: 20%;
+      font-size: 10px; }
+    body .footer-wrap .footer-cr {
+      font-size: 10px;
+      text-align: center; }
