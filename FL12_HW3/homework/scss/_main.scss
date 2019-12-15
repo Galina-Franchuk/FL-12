@@ -1,0 +1,179 @@
+@mixin button {
+	background: $colorButtonGradient;
+	color: $colorTextButton;
+	box-shadow: none;
+	border: none;
+	width: 100px;
+	height: 30px;
+}
+
+@mixin buttonHover ($color) {
+	&:hover {
+		color: darken($color, 5%);
+		background: lighten($color, 10%);
+		box-shadow: 1px 1px 5px $colorButtonGradient; 
+	}
+}
+
+@mixin linksHover ($color) {
+	&:hover {
+		color: darken($color, 15%); 
+	}
+}
+
+@mixin logo {
+	display: flex;
+				img {
+					margin: 10px;
+					padding: 5px;
+					width: 30px;
+				}
+				span {
+					display: block;
+					font-size: 0.5em;
+					text-align: center;
+	}
+}
+
+body {
+	background: map-get($map-colors, background);
+	color: $colorTextMain;
+	font-family: $FontSourse;
+	.header {
+		background: $backgroundMainIMG 100% no-repeat;
+		height: 500px;
+		background-size: cover;
+		border-radius: 0 0 35em/15em 0;
+		.header-wrap {
+			width: 80%;
+			margin: auto;
+			.landing-logo {
+				@include logo;
+			}
+			.header_heading {
+				width: 400px;
+				font-size: 45px;
+				font-weight: 800;
+				line-height: 0.9;
+			}
+			.header_heading::before {
+					content: "awesome";
+					position: absolute;
+					margin: 50px 0 0 0px;
+					background: $colorHighlight;
+					line-height: 20px;
+					padding: 0 0 10px 0;
+			}
+			.header_text {
+				white-space: pre-line;
+				font-size: 0.8em;
+				margin-top: -3em;
+				line-height: 1.5;
+				color: $colorSmallText;
+			}
+			div {
+				.header_button {
+					@include button;
+					@include buttonHover ($color: $colorButtonGradient);
+					margin-top: 2em;
+					margin-right: 8em;
+				}
+				.login {
+					@include linksHover ($color: $colorTextButton);
+					color: $colorTextButton;
+				}
+			}
+		}
+	}
+	.section {
+		margin: auto;
+		max-width: 700px;
+		.section_text {
+			text-align:center;
+			font-weight: 900;
+			font-size: 20px;
+		}	
+		.section_text::before {
+					content: "adventure";
+					font-size: 20px;
+					position: absolute;
+					margin-left: 103px;
+					padding: 0 1px;
+					background: $colorHighlight;
+		}
+		.section_card {
+				padding: 10px;
+				background: $colorSectionCard;
+				margin: 10px 15px;
+				padding: 10px;
+				display: flex;
+				.section_card_img {
+					border-radius: 10px;
+				}
+				.section_card_right_container {
+					color: $colorTextButton;
+					text-align: center;
+					.section_card_text, .section_link {
+						font-size: 11px;
+						color: $colorTextContent;
+						margin: 5% 15%;
+						text-align: justify;
+					}
+					.section_link {
+						@include linksHover($color: $colorTextContent);
+					}
+				}
+		}
+		.section_banner {
+			position: relative;
+			top: 50px;
+			display: flex;
+			align-items: center;
+			min-height: 100px;
+			border-radius: 5px;
+			background-image: linear-gradient(to right, $colorButtonGradient, $colorGradient2);
+			.section_banner_text_wrap {
+				margin: 0px 10%;
+				.section_banner_heading {
+					@extend .section_text;
+					color: $colorSmallText;
+					margin: 0;
+				}
+				.section_banner_heading::before {
+					content: "start";
+					position: absolute;
+					margin-left: 80px;
+					background: $colorHighlight;
+				}
+				.section_banner_text  {
+					color: $colorTextContent;
+					font-size: 12px;
+				}
+			}
+			.section_banner_button {
+				@include button;
+				@include buttonHover ($color: $colorButtonGradient);
+				margin-left: 80px;
+			}
+		}
+	}
+	.footer-wrap {
+		background: $colorSectionCard;
+		color: $colorTextContent;
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		padding: 60px 18% 2% 18%;
+		.landing-logo {
+				@include logo;
+			}
+		.footer_text {
+			width: 20%;
+			font-size: 10px;
+		}
+		.footer-cr {
+			font-size: 10px;
+			text-align: center;
+		}
+}
+}

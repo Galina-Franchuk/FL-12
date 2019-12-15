@@ -1,0 +1,27 @@
+$FontSourse: 'Source Sans Pro', sans-serif;
+$FontHint: 'Hind', sans-serif;
+$FontFresca: 'Fresca', sans-serif;
+
+$colorBackground: #21232e;
+$colorButtonGradient: #e3ac00;
+$colorHighlight: #ff4e33;
+$colorSectionCard: #3b3f50;
+$colorTextMain: #fff;
+$colorSmallText: #fff;
+$colorGradient2: #942f50;
+$colorTextButton: #fff;
+$colorTextContent: #c0c3ce;
+
+$map-colors: (
+	background: $colorBackground ,
+	button: $colorButtonGradient ,
+	highlight: $colorHighlight ,
+	main: $colorSectionCard ,
+	text: $colorTextMain ,
+	smallText: $colorSmallText ,
+	gradient: $colorGradient2 ,
+	buttonText: $colorTextButton ,
+	textContent: $colorTextContent
+);
+
+$backgroundMainIMG: url(../img/m-h-night.jpg);

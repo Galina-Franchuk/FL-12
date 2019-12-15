@@ -1,0 +1,27 @@
+$FontSourse: 'Source Sans Pro', sans-serif;
+$FontHint: 'Hind', sans-serif;
+$FontFresca: 'Fresca', sans-serif;
+
+$colorButtonGradient: #699900;
+$colorHighlight: #14a0c7;
+$colorBackground: #fff;
+$colorSectionCard: #21232e;
+$colorTextMain: #000;
+$colorSmallText: #2c2f3c;
+$colorGradient2: #305ecd; 
+$colorTextButton: #fff;
+$colorTextContent: #c0c3ce;
+
+$map-colors: (
+	background: $colorBackground ,
+	button: $colorButtonGradient ,
+	highlight: $colorHighlight ,
+	main: $colorSectionCard ,
+	text: $colorTextMain ,
+	smallText: $colorSmallText ,
+	gradient: $colorGradient2 ,
+	buttonText: $colorTextButton ,
+	textContent: $colorTextContent
+);
+
+$backgroundMainIMG: url(../img/m-h-day.jpg);
