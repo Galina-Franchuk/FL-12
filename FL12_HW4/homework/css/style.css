@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #777;
+}
+
+ a:hover {
+	color: #bfba55;
+}
+
+.header_block_wrap {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	letter-spacing: 5px;
+	border-bottom: 1px solid #777;
+}
+
+.header_block {
+	margin: 30px 10%;
+}
+
+.header_logotext {
+	float: left;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.main_menu {
+	float: right;
+}
+
+.main_menu  a {
+	margin: 0 20px;
+	font-size: 0.8em;
+}
+
+.header.banner {
+	background: url(../img/home-bg.jpg) no-repeat;
+	background-size: cover; 
+	height: 700px;
+	margin-top: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+.header_head {
+	padding: 20% 0 30px 0;
+	font-size: 3em;
+	font-weight: 700;
+}
+
+.header_text {
+	color: #bfba55;
+	font-size: 20px;
+}
+
+.header_button  {
+	margin: 50px 0;
+	width: 170px;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	box-shadow: none;
+	background: #fff;
+	font-size: 14px;
+	text-transform: uppercase;	
+	font-weight: 700;
+}
+
+/* -------------------*/
+
+.section {
+	max-width: 700px;
+	margin: auto;
+}
+
+.article_wrap {
+	padding: 80px 0 40px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.article_wrap .imagelogo {
+	width: 100%;
+}
+
+.article_wrap .article_title{
+	font-size: 22px;
+	font-weight: 700;
+	padding-top: 20px;
+}
+
+.article_attributes {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	padding: 5px  0;
+	color: #777;
+}
+
+.article_attributes div {
+	padding: 0 10px;
+}
+
+.article_attributes .author_photo {
+	width: 30px;
+	border-radius: 30px;
+}
+
+.article_wrap .article_short_text {
+	padding: 15px 0;
+	color: #777;
+	font-size: 16px;
+}
+
+.article_wrap .article_button {
+	margin: 20px 0;
+	width: 200px;
+	height: 50px;
+	border: 1px solid #777;
+	border-radius: 25px;
+	box-shadow: none;
+	background: #fff;
+	color: #777;
+	font-size: 14px;
+}
+
+/* -------------------*/
+
+.footer {
+	background: #000;
+	color: #777;
+	min-height: 300px;
+}
+
+.footer_wrap {
+	display: flex;
+	justify-content: space-between;
+	max-width: 700px;
+	margin: auto;
+	padding: 70px 0;
+}
+
+.footer-column {
+	width: 35%;
+	padding-right: 5%;
+}
+
+.footer-column_title {
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+.footer-column {
+	font-size: 10px;
+}
+
+.footer-column_text {
+	line-height: 14px;
+}
+
+.footer-column_phone, .footer-column_email, .footer-column_copyrights {
+	padding-top: 10px;
+}
+
